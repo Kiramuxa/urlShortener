@@ -1,0 +1,7 @@
+{
+  "db": {
+    "protocol": "http",
+    "port": "3000",
+    "urls": "urls"
+  }
+}
