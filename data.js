@@ -1,5 +1,9 @@
 module.exports = function() {
   return {
-    urls: []
+    urls: [
+      { longUrl: "vk.com", shortUrl: "vk" },
+      { longUrl: "vk.ru", shortUrl: "vku" },
+      { longUrl: "vk.ua", shortUrl: "vka" }
+    ]
   }
 }

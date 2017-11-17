@@ -1,1 +1,18 @@
-
+<div class="container" style="padding: 100px">
+    <div class="row">
+        <div class="form-group col-xs-4">
+            <input type="text" class="form-control" id="term" placeholder="Enter origin URL" (keyup)="searchTerm$.next($event.target.value)">
+            <div *ngIf='urlCheck === true' class="well well-sm" 
+                 style="background-color: rgb(255, 113, 47); position: absolute; z-index: 1000">
+                this Url is already registered!
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary col-xs-2"
+                [class.disabled]="urlCheck === true" style="margin-left: 15px">Make short URL</button>
+    </div>
+    <div class="row">
+        <div class="well col-xs-6" style="margin-left: 15px">
+            {{ shortUrl }}
+        </div>
+    </div>
+</div>
